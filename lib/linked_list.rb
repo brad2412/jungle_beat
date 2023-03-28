@@ -1,7 +1,4 @@
-require './lib/node'
-require 'pry'
-
-class = LinkedList 
+class  LinkedList 
   attr_reader :head
   def initialize
     @head = nil
@@ -90,3 +87,4 @@ class = LinkedList
     current_node.next_node = nil              
     result                                    
   end
+end

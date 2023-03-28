@@ -1,4 +1,4 @@
-class = Node 
+class  Node 
   attr_reader :data
   attr_accessor :next_node
   
