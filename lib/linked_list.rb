@@ -35,3 +35,15 @@ class = LinkedList
     count   
   end
   
+
+  def to_string
+    string = ""   
+    current_node = @head    
+      until current_node.nil?   
+        string << "#{current_node.data} "   
+        current_node = current_node.next_node 
+      end
+      string.strip    
+  end
+
+  
