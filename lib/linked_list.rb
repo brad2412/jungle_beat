@@ -77,4 +77,16 @@ class = LinkedList
     array[position..position + number - 1].join(" ")
   end
 
-  
+  def includes?(data)
+    self.to_string.include?(data)  
+  end
+
+  def pop
+    current_node = @head
+    while current_node.next_node.next_node        
+      current_node = current_node.next_node     
+    end
+    result = current_node.next_node.data      
+    current_node.next_node = nil              
+    result                                    
+  end
