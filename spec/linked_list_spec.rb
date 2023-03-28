@@ -92,3 +92,12 @@ RSpec.describe LinkedList do
     expect(list.to_string).to eq("deep woo shi")
   end
 end
+
+# This is my branch I am adding to the main and push/pulling to main and merging.
+# I also wanted to add I was only able to complete 2 iterations for this project.  
+# I was having a had time with they syntax and testing and trying to gain any momentum
+# It really only started to somewhat click for me the last two days, when I was starting out
+# I would get stuck and not know how to continue without looking at something and that 
+# blank feeling is not fun.  If you think of any help for syntax (videos or practice excersies)
+# that would be much appreciated.  Hope you like what I was was able to come up with!
+# -Brad
