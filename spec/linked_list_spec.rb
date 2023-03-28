@@ -65,3 +65,13 @@ RSpec.describe LinkedList do
     expect(list.find(1, 3)).to eq("woo shi shu")
   end
   
+  it 'can determine if list includes specific data' do
+    list = LinkedList.new
+    list.append("deep")
+    list.append("woo")
+    list.append("blop")
+    list.insert(2, "shi")
+    list.insert(3, "shu")
+    expect(list.includes?("deep")).to eq true
+    expect(list.includes?("dep")).to eq false
+  end
