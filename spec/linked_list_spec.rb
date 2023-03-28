@@ -32,3 +32,24 @@ RSpec.describe LinkedList do
   expect(list.to_string).to eq("doop deep")
   end
 
+  it 'can prepend' do
+  list = LinkedList.new
+  list.append("plop")
+  list.append("suu")
+  list.prepend("dop")
+  expect(list.head.data).to eq("dop")
+  expect(list.count).to eq(3)
+  expect(list.to_string).to eq("dop plop suu")
+   end
+  
+  it 'can insert at specific position' do
+  list = LinkedList.new
+  list.append("plop")
+  list.append("suu")
+  list.prepend("dop")
+  list.insert(1, "woo")
+  expect(list.head.next_node.data).to eq("woo")
+  expect(list.count).to eq (4)
+  expect(list.to_string).to eq("dop woo plop suu")
+  end
+
