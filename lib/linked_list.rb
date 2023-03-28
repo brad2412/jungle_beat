@@ -71,3 +71,10 @@ class = LinkedList
     else "Incorrect sound!"
     end
   end
+
+  def find(position, number)
+    array = self.to_string.split(" ") 
+    array[position..position + number - 1].join(" ")
+  end
+
+  
