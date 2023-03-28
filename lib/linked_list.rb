@@ -46,4 +46,28 @@ class = LinkedList
       string.strip    
   end
 
-  
+  def prepend(data)
+    correct_sound = check_sound(data)
+    if correct_sound == true
+      current_head = @head    
+      @head = Node.new(data)    
+      @head.next_node = current_head  
+      data  
+    else "Incorrect sound!"
+   end
+  end
+
+  def insert(position, data)
+    correct_sound = check_sound(data)
+    if correct_sound == true
+      current_node = @head     
+      (position - 1).times do   
+        current_node = current_node.next_node   
+      end
+      new_node = Node.new(data)   
+      new_node.next_node = current_node.next_node 
+      current_node.next_node = new_node   
+      data
+    else "Incorrect sound!"
+    end
+  end
